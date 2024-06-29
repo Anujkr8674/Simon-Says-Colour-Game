@@ -1,21 +1,36 @@
 body
 {
-    text-align: center;
+    /* text-align: center; */
+    text-align: center; /* Center align text */
+    font-family: Arial, sans-serif; /* Ensure consistent font */
+    background-color: #f0f0f0; /* Light background color */
+    margin: 0;
+    padding: 0;
 }
 
 .btn
 {
-    height: 200px;
-    width: 200px;
+    height: 150px;
+    width: 150px;
     border-radius: 20%;
-    border: 10px solid black;
+    border: 5px solid black;
     margin: 2.5rem;
+    font-size: 1.2rem; /* Adjusted font size */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth background color transition */
 }
 
 .btn-container
 {
-    display: flex;
-    justify-content: center;
+    /* display: flex;
+    justify-content: center; */
+    display: flex; /* Use flexbox for layout */
+    justify-content: center; /* Center align items horizontally */
+    flex-wrap: wrap; /* Allow buttons to wrap on smaller screens */
+    margin-top: 2rem; /* Margin for top spacing */
 }
 
 .red
@@ -46,4 +61,14 @@ body
 .userflash
 {
     background-color: green;
+}
+
+
+@media (max-width: 600px) {
+    .btn {
+        height: 100px; /* Smaller button size */
+        width: 100px; /* Smaller button size */
+        font-size: 1rem; /* Smaller font size */
+        margin: 0.5rem; /* Adjusted margin for smaller screens */
+    }
 }
