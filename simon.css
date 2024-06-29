@@ -8,6 +8,17 @@ body
     padding: 0;
 }
 
+h2 {
+    color: #152e79;
+   
+    
+    
+}
+
+.heading h4 {
+    color: rgb(3, 119, 3);
+}
+
 .btn
 {
     height: 150px;
@@ -72,3 +83,17 @@ body
         margin: 0.5rem; /* Adjusted margin for smaller screens */
     }
 }
+
+
+/* for start button */
+
+#start-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+    /* background-color: #1749e1;
+    color: white; */
+    border-radius: 30px;
+}
+

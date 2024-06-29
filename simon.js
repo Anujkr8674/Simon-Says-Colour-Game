@@ -11,15 +11,39 @@ let level = 0;
 
 let h4 = document.querySelector("h4");
 
-document.addEventListener("keypress", function(){
-    if (started==false){
+let startButton = document.getElementById("start-button");
+
+// for start the game  
+
+// document.addEventListener("keypress", function() {
+//     if (!started) {
+//         startGame();
+//     }
+// });
+
+startButton.addEventListener("click", function() {
+    if (!started) {
+        startGame();
+    }
+});    
+// game is started
+
+
+
+
+
+
+function startGame() {
+    //  game start logic here
+
+    
     console.log("game start");
     started = true;
-    }
-
+    startButton.disabled = true;
     levelup();
+}
 
-});
+
 
 
 function gameFlash(btn)
@@ -108,6 +132,6 @@ function reset() {
     userseq =[];
     gameseq = [];
     level = 0;
-
-    
+    startButton.disabled = false;
+   
 }
