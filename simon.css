@@ -19,6 +19,14 @@ h2 {
     color: rgb(3, 119, 3);
 }
 
+span    {
+    color: #db0d4b;
+}
+
+h5  {
+    color:rgb(4, 86, 86);
+}
+
 .btn
 {
     height: 150px;
