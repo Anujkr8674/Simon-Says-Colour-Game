@@ -23,9 +23,20 @@ span    {
     color: #db0d4b;
 }
 
-h5  {
+div h5  {
     color:rgb(4, 86, 86);
+    text-align: center;
+    row-gap: 100px;
+    /* margin-left: 350px;
+    margin-right: 350px; */
 }
+ 
+
+
+
+
+
+
 
 .btn
 {
